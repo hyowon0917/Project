@@ -1,0 +1,80 @@
+@font-face{                                             /*폰트참조*/
+  font-family: abster;
+  src:url(font/abster-webfont.woff) format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: auto;
+  height: 100vh;      /*width는 상관없지만 height는 %로 완전 적용 불가*/
+  background: linear-gradient(rgba(228, 228, 228, 0.5), rgba(228, 228, 228, 0.5)), url(images/interior.jpg) no-repeat;
+}
+
+.container .header {
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;      /*상단에 붙어있는 요소들을 중앙으로*/
+}
+
+.container .header h1 a{
+  text-decoration: none;    /*밑줄 없애기*/
+  color: white;
+  font-family: abster;
+}
+
+.container .nav ul li {
+  display: inline-block;    /*가로로 정렬*/
+  margin: 0 10px;         /*li 사이에 간격을 줌*/
+}
+
+.container .nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.container .nav ul li a:hover {
+  color: #1fdfdf;
+}
+
+.container .welcome {   /*정중앙에 올 수 있도록 설정*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .welcome h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.container .welcome p {
+  font-size: 20px;
+}
+
+.container .welcome button {
+  background: none;
+  border: solid darkseagreen;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 20px;    /*테두리 둥글게*/
+  margin-top: 30px;     /*p내용과 거리두기*/
+  outline: none;    /*클릭했을 때 잔상 없애기*/
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.container .welcome button:hover {
+  background: darkslategray;
+}

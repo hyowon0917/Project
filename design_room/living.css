@@ -1,0 +1,45 @@
+@font-face{                                             /*폰트참조*/
+  font-family: abster;
+  src:url(font/abster-webfont.woff) format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: auto;
+  height: 100vh;      /*width는 상관없지만 height는 %로 완전 적용 불가*/
+  background-color:lemonchiffon;
+}
+
+.container .header {
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;      /*상단에 붙어있는 요소들을 중앙으로*/
+}
+
+.container .header h1 a{
+  text-decoration: none;    /*밑줄 없애기*/
+  color: black;
+  font-family: abster;
+}
+
+.container .nav ul li {
+  display: inline-block;    /*가로로 정렬*/
+  margin: 0 10px;         /*li 사이에 간격을 줌*/
+}
+
+.container .nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.container .nav ul li a:hover {
+  color: gray;
+}
