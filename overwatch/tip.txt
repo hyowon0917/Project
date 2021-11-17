@@ -1,0 +1,7 @@
+TIP 1.
+
+<div class="container">
+    <div class="heroes">
+      .hero*32>.image (->32개의 hero클래스+내의 image가 생김)
+    </div>
+</div>
